@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Preetham V | Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav h1{
+font-size:24px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00f2fe;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+flex-direction:column;
+}
+
+.hero h2{
+font-size:45px;
+}
+
+.hero span{
+color:#00f2fe;
+}
+
+.hero p{
+margin-top:10px;
+font-size:18px;
+opacity:0.8;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+background:#00f2fe;
+color:black;
+border:none;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* Sections */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+}
+
+/* Skills */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:rgba(255,255,255,0.1);
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.2);
+}
+
+/* Projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:rgba(255,255,255,0.1);
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.4);
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Preetham V</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+
+<div class="hero">
+<h2>Hello, I'm <span>Preetham</span></h2>
+<p>Computer Science Student | Java Developer | Web Developer</p>
+<button class="btn">View My Work</button>
+</div>
+
+<!-- About -->
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<p style="text-align:center; max-width:700px; margin:auto;">
+I am a Computer Science student passionate about software development,
+Java programming, cloud computing, and building web applications.
+Currently learning full stack development and DevOps technologies.
+</p>
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Java</h3>
+<p>Object Oriented Programming</p>
+</div>
+
+<div class="skill-card">
+<h3>HTML & CSS</h3>
+<p>Responsive Web Design</p>
+</div>
+
+<div class="skill-card">
+<h3>Git & GitHub</h3>
+<p>Version Control</p>
+</div>
+
+<div class="skill-card">
+<h3>AWS</h3>
+<p>Cloud Deployment</p>
+</div>
+
+</div>
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Portfolio Website</h3>
+<p>Personal developer portfolio built using HTML & CSS.</p>
+</div>
+
+<div class="project-card">
+<h3>AWS Web App</h3>
+<p>Deployed a static website using Nginx on AWS EC2.</p>
+</div>
+
+<div class="project-card">
+<h3>Plant Disease Detection</h3>
+<p>Machine learning project to detect plant diseases.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+<h2 class="section-title">Contact</h2>
+<p>Email: preetham@example.com</p>
+<p>GitHub: github.com/preetham</p>
+<p>LinkedIn: linkedin.com/in/preetham</p>
+</section>
+
+<footer>
+<p>© 2026 Preetham V | Portfolio</p>
+</footer>
+
+</body>
+</html>
